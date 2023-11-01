@@ -19,6 +19,7 @@ def is_enabled(value, default):
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 SUPPORT_CHAT_ID = -100406764810
+NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 SUPPORT_CHAT = 'Test'
 # Bot information
 PORT = environ.get("PORT", "8082")
