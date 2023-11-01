@@ -17,6 +17,8 @@ def is_enabled(value, default):
     else:
         return default
 
+SUPPORT_CHAT_ID = -100406764810
+SUPPORT_CHAT = 'Test'
 # Bot information
 PORT = environ.get("PORT", "8082")
 SESSION = environ.get('SESSION', 'Media_search')
