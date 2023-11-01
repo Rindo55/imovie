@@ -35,8 +35,8 @@ BOT_START_TIME = time()
 MALTI_BUTTONS = os.environ.get("MALTI_BUTTONS", "6")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in (1128389435 5277484262 1353788579 1163343128).split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in (-1001513265226 -1001653468210 -1001784666427).split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in (1128389435, 5277484262, 1353788579, 1163343128).split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in (-1001513265226, -1001653468210, -1001784666427).split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = -1001522908216
